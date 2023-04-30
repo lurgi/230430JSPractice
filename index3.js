@@ -15,7 +15,7 @@ const geoOk = async (position) => {
   const { latitude, longitude } = position.coords;
   const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=af39ab32f19c0e479e0761a150e0f9bf`;
   const json = await fetch(url).then((response) => response.json());
-  console.log(json);
+
   weather_div.innerHTML = json.weather[0].main;
   location_div.innerHTML = json.name;
 };

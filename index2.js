@@ -16,7 +16,6 @@ const deleteFn = (event) => {
   event.target.parentNode.parentNode.removeChild(liElement);
   todos = todos.filter((todo) => todo.id !== liElement.id);
   const newtodos = JSON.stringify(todos);
-  console.log(newtodos);
 
   window.localStorage.setItem("todos", newtodos);
 };

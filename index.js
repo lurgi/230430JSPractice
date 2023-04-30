@@ -5,6 +5,13 @@ const userButton = userForm.querySelector("input:nth-child(2)");
 const userName = userForm.querySelector("input:nth-child(1)");
 const greeting = document.querySelector("#greeting");
 const greeting_div = document.querySelector("#greeting_div");
+const body = document.querySelector("body");
+
+const randomNum = Math.floor(Math.random() * 2);
+const arr = ["./image/animals-2222007.jpg", "./image/bye.jpg"];
+console.log(randomNum);
+console.log(body.style);
+body.style = `background-image : url(${arr[randomNum]})`;
 
 greeting.innerHTML = window.localStorage.getItem("username") + "님";
 
