@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./styles.css" rel="stylesheet" />
+    <title>Hello</title>
+  </head>
+  <body>
+    <div id="main">
+      <div id="loginForm" class="">
+        <form id="userForm">
+          <input name="username" type="text" />
+          <input type="submit" value="➡️" />
+        </form>
+        <span>이름을 입력해 주세요</span>
+      </div>
+      <div id="todo" class="hidden">
+        <h4>TO DO LIST</h4>
+        <form id="todo_form">
+          <input name="todo" type="text" required />
+          <input type="submit" value="➡️" />
+        </form>
+        <hr />
+        <ul id="todo_list"></ul>
+      </div>
+
+      <div id="side_menu">
+        <div id="greeting_div" class="hidden">
+          <h3>안녕하세요</h3>
+          <h3 id="greeting"></h3>
+        </div>
+        <div id="time"></div>
+        <span id="weather_head">Weather</span>
+        <div id="weather"></div>
+        <span id="location_head">Location</span>
+        <div id="location"></div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+    <script src="./index2.js"></script>
+    <script src="./index3.js"></script>
+  </body>
+</html>
